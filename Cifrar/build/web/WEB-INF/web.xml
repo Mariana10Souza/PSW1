@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CodificarPalavra</servlet-name>
+        <servlet-class>CodificarPalavra</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConverterPalavra</servlet-name>
+        <servlet-class>ConverterPalavra</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ZP</servlet-name>
+        <servlet-class>ZP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CodificarPalavra</servlet-name>
+        <url-pattern>/CodificarPalavra</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConverterPalavra</servlet-name>
+        <url-pattern>/ConverterPalavra</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ZP</servlet-name>
+        <url-pattern>/ZP</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
